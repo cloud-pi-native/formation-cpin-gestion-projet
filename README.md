@@ -82,3 +82,16 @@ Aller sur le menu ```Rôle``` du projet et créer un rôle permettant uniquement
 Dans l'onglet Membres, ajouter le voisin que vous avez ajouté à l'étape précédente.
 
 Une fois que c'est fait par les 2 voisins, retournez dans la liste de vos projets et allez consulter le projet de votre voisin et vérifiez que vous avez bien les droits correspondants.
+
+## Gestion des ressources
+
+L'onglet ```Ressources``` permet de gérer :
+
+ - Des environnements : permet de créer un environnement applicatif, associé à un cluster et un quota d'utilisation de ressources. 
+ - Des dépots de codes : les dépots de code correspondent à des repos git externe à CPiN et contenant : 
+   - Soit du code applicatif dont le but est de construire et déposer une image Docker sur le repo d'artefact Harbor
+   - Soit du code d'infrastructure et contenant des manifest, charts Helm ou Kustomize permettant de déployer des applications.
+
+![ressources](./img/resources.png)
+
+Cette partie sera détaillée dans la suite de la formation.
