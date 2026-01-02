@@ -2,7 +2,7 @@
 
 ## Connexion à CPiN
 
-Ouvrir la console sur l'URL de [formation](https://console.formation.cpin.numerique-interieur.com/) 
+Ouvrir la console sur l'URL de [formation](https://console.dso.formation.numerique-interieur.fr/) 
 
 ![login](./img/console-not-connected.png)
 
@@ -57,7 +57,7 @@ Une fois le projet créé, le menu suivant apparait qui permet de gérer les dif
 
  ## Gestion équipe
 
-Aller dans le menu ```Equipe``` puis ajouter une personne (par binome, demandez à votre voisin de table). L'ajout sefait par adresse mail :
+Aller dans le menu ```Equipe``` puis ajouter une personne (travaillez par binome, demandez à votre voisin de table). L'ajout se fait par adresse mail :
 ![ajout membre](./img/add-member.png)
 
 puis cliquez sur Ajouter
