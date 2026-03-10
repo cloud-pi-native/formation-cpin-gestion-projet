@@ -41,8 +41,8 @@ Le status des services affiche une page du type météo des services :
 Dupont)
 - `Description` : Formation CPiN
 - `Ressources Prod` et `Hors Prod du projet` :
-  - 4 CPU
   - 8 Go de RAM
+  - 4 CPU
   - 0 GPU
 
 ▶️ Pour valider la création, cliquez sur le bouton `Commander mon espace projet`.
