@@ -99,7 +99,11 @@ les outils tiers (Gitlab, ArgoCD, etc.). Ces opérations sont idempotentes et pe
 
 ![gestion role](./img/gestion-role.png)
 
+▶️ Cliquez sur le bouton `Enregistrer`
+
 ▶️ Dans l'onglet `Membres`, ajoutez l'utilisateur' que vous avez ajouté à l'étape précédente.
+
+▶️ Cliquez sur le bouton `Reprovionner le projet`
 
 ▶️ Une fois que c'est fait par les 2 voisins, retournez dans la liste de vos projets et consultez le projet de votre voisin.
 Vérifiez que vous avez bien les droits correspondants.
