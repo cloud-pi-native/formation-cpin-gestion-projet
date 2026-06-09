@@ -92,6 +92,18 @@ les outils tiers (Gitlab, ArgoCD, etc.). Ces opérations sont idempotentes et pe
 
 ## Gestion des rôles
 
+> [!IMPORTANT]
+> La console défini 4 rôles génériques : Administrateur, DevOps, Développeur et lecture seule. Ces rôles définissent des droits dans la console ET dans les services externes, pour l'instant uniquement Gitlab. La création de rôles custom est limité uniquement à la console et non aux services externes c'est à dire : la création d'un rôle "admin" dans la console donne tous les droits dans la console mais aucun sur Gitlab.
+
+![repro](./img/roles-predefinis.png)
+
+Le tableau suivant présente la matrice de correspondance entre les rôles prédéfinis et les droits dans Gitlab :
+
+![repro](./img/matrice-roles.png)
+
+la suite du TP va créer des rôles dans la console et donc donner des droits uniquement dans la console.
+
+
 ▶️ Allez sur le menu `Rôle` du projet et créez un rôle `read-repo-manage-env` attribuant uniquement les droits suivants :
 - *Voir les environnements*
 - *Gérer les environnements*
