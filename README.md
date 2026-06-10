@@ -101,7 +101,7 @@ Le tableau suivant présente la matrice de correspondance entre les rôles préd
 
 ![repro](./img/matrice-roles.png)
 
-▶️ Allez sur le menu `Rôle` du projet et retrouver le rôle permettant d'attribuer les permissions suivantes :
+▶️ Allez sur le menu `Rôle` du projet et retrouvez le rôle permettant d'attribuer les permissions suivantes :
 - *Voir les environnements*
 - *Gérer les dépots*
 - *Voir les dépôts*
