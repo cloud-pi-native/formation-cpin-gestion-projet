@@ -126,3 +126,5 @@ L'onglet `Ressources` permet de gérer :
 Cette partie sera détaillée dans la suite de la formation.
 
 Bravo, vous avez terminé le premier chapitre de la formation CPiN.
+
+Vous pouvez passer à l'étape 2 : [Application d'exemple pour déploiement sur CPiN](https://github.com/cloud-pi-native/formation-cpin-repo-applicatif)
