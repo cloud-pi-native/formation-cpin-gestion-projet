@@ -101,19 +101,12 @@ Le tableau suivant présente la matrice de correspondance entre les rôles préd
 
 ![repro](./img/matrice-roles.png)
 
-la suite du TP va créer des rôles dans la console et donc donner des droits uniquement dans la console.
-
-
-▶️ Allez sur le menu `Rôle` du projet et créez un rôle `read-repo-manage-env` attribuant uniquement les droits suivants :
+▶️ Allez sur le menu `Rôle` du projet et retrouver le rôle permettant d'attribuer les permissions suivantes :
 - *Voir les environnements*
-- *Gérer les environnements*
+- *Gérer les dépots*
 - *Voir les dépôts*
 
-![gestion role](./img/gestion-role.png)
-
-▶️ Cliquez sur le bouton `Enregistrer`
-
-▶️ Dans l'onglet `Membres`, ajoutez l'utilisateur' que vous avez ajouté à l'étape précédente.
+▶️ Dans l'onglet `Membres`, attribuez ce rôle à l'utilisateur que vous avez ajouté à l'étape précédente.
 
 ▶️ Cliquez sur le bouton `Reprovionner le projet`
 
