@@ -93,13 +93,12 @@ les outils tiers (Gitlab, ArgoCD, etc.). Ces opérations sont idempotentes et pe
 ## Gestion des rôles
 
 > [!IMPORTANT]
-> La console défini 4 rôles génériques : Administrateur, DevOps, Développeur et lecture seule. Ces rôles définissent des droits dans la console ET dans les services externes, pour l'instant uniquement Gitlab. La création de rôles custom est limitée uniquement à la console et non aux services externes c'est à dire : la création d'un rôle "admin" dans la console donne tous les droits dans la console mais aucun dans Gitlab.
+> La console défini 4 rôles génériques : Administrateur, DevOps, Développeur et lecture seule. Ces rôles définissent des droits dans la console ET dans les services externes. La création de rôles custom est limitée uniquement à la console et non aux services externes.
 
 ![repro](./img/roles-predefinis.png)
 
-Le tableau suivant présente la matrice de correspondance entre les rôles prédéfinis et les droits dans Gitlab :
-
-![repro](./img/matrice-roles.png)
+Vous pouvez retrouver dans la documentation CPiN le [détail des correspondances RBAC](https://cloud-pi-native.fr/guide/rbac/console-cpin)
+entre ces rôles et les services externes.
 
 ▶️ Allez sur le menu `Rôle` du projet et retrouvez le rôle permettant d'attribuer les permissions suivantes :
 - *Voir les environnements*
@@ -120,8 +119,9 @@ L'onglet `Ressources` permet de gérer :
  - les `Dépôts` : les dépôts de code correspondent à des dépôts git externe à CPiN et contenant : 
    - Soit du code applicatif dont le but est de construire et déposer une image Docker sur le dépôt d'artefact *Harbor*
    - Soit du code d'infrastructure contenant des manifest et des charts Helm ou Kustomize, permettant de déployer des applications.
+- les `Déploiements` : Permet d'associer un environnement à un ou plusieurs dépôts.
 
-![ressources](./img/resources.png)
+![ressources](./img/ressources.png)
 
 Cette partie sera détaillée dans la suite de la formation.
 

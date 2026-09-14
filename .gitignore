@@ -1,0 +1,25 @@
+# IDE JetBrains
+.idea/
+*.iml
+*.iws
+out/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Fichiers temporaires / éditeurs
+*~
+*.swp
+*.swo
+*.tmp
+*.bak
