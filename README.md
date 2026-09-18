@@ -37,7 +37,8 @@ Le statut des services affiche une page du type météo des services :
 ![Creation projet](./img/create-project1.png)
 
 ▶️ Créez un projet avec les paramètres suivants :
-- `Nom du projet` : votre nom ou première lettre du prénom et 3 premières lettres du nom de famille (pdup pour Pierre Dupont)
+- `Nom du projet` : votre nom ou première lettre du prénom et 3 premières lettres du nom de famille (pdup pour Pierre
+Dupont)
 - `Description` : Formation CPiN
 - `Ressources Prod du projet` et `Ressources Hors Prod du projet` :
   - 8 Go de RAM
@@ -47,14 +48,18 @@ Le statut des services affiche une page du type météo des services :
 ▶️ Pour valider la création, cliquez sur le bouton `Commander mon espace projet`.
 
 > [!IMPORTANT]
-> Lors d'un déploiement réel sur l'offre CPiN au MI, ces informations doivent correspondre à la demande d'hébergement que vous aurez faite, et correspondent aux quotas globaux de ressources de votre projet sur les clusters (*prod* et *hors prod*)
+> Lors d'un déploiement réel sur l'offre CPiN au MI, ces informations doivent correspondre à la demande d'hébergement
+> que vous aurez faite, et correspondent aux quotas globaux de ressources de votre projet sur les clusters
+> (*prod* et *hors prod*)
 
-Une fois le projet créé (environ 1 minute), le menu suivant apparait. Il permet de gérer les différents éléments d'un projet :
+Une fois le projet créé (environ 1 minute), le menu suivant apparait. Il permet de gérer les différents éléments d'un
+projet :
 
 ![menu projet](./img/menu-project.png)
 
  - **Ressources** : Permet de gérer les environnements et les dépôts de code source.
- - **Services externes** : permet d'accéder à son espace projet sur les différents outils de CPiN : ArgoCD, GitLab, Grafana, Harbor, etc.
+ - **Services externes** : permet d'accéder à son espace projet sur les différents outils de CPiN : ArgoCD, GitLab,
+Grafana, Harbor, etc.
  - **Équipe** : permet de gérer l'équipe qui peut accéder au projet.
  - **Rôles** : permet de définir des rôles aux membres de l'équipe projet.
  - **Journaux** : permet de voir les logs de la console sur les opérations de son projet.
@@ -63,21 +68,24 @@ Une fois le projet créé (environ 1 minute), le menu suivant apparait. Il perme
 
 ## Gestion d'équipe
 
-▶️ Allez dans le menu `Équipe` puis ajoutez une personne via son email (travaillez par binôme, demandez à votre voisin de table).
+▶️ Allez dans le menu `Équipe` puis ajoutez une personne via son email (travaillez par binôme, demandez à votre voisin
+de table).
 
 ![ajout membre](./img/add-member.png)
 
-Le bouton `transférer le projet` en fin de page permet de changer le propriétaire du projet et lui transférer tous les droits.
+Le bouton `transférer le projet` en fin de page permet de changer le propriétaire du projet et lui transférer tous les
+droits.
 
 La modification des membres d'un projet nécessite de reprovisionner le projet. Un message s'affiche pour l'indiquer :
 
-![repro](./img/repro-msg.png)
+![reprovisionnement nécessaire](./img/repro-msg.png)
 
 ▶️ Cliquez sur le bouton `Reprovisionner le projet`
 
-![repro](./img/repro-menu.png)
+![bouton reprovisionner](./img/repro-menu.png)
 
-Le reprovisionnement permet à la console de ré-appliquer l'ensemble des configurations de votre projet sur la console et les outils tiers (GitLab, ArgoCD, etc.). Ces opérations sont idempotentes et peuvent donc être rejouées sans impact.
+Le reprovisionnement permet à la console de ré-appliquer l'ensemble des configurations de votre projet sur la console
+et les outils tiers (GitLab, ArgoCD, etc.). Ces opérations sont idempotentes et peuvent donc être rejouées sans impact.
 
 > [!TIP]
 > À noter que la console déclenche cette action périodiquement de manière automatique.
@@ -85,11 +93,14 @@ Le reprovisionnement permet à la console de ré-appliquer l'ensemble des config
 ## Gestion des rôles
 
 > [!IMPORTANT]
-> La console définit 4 rôles génériques : Administrateur, DevOps, Développeur et lecture seule. Ces rôles définissent des droits dans la console ET dans les services externes. La création de rôles custom est limitée uniquement à la console et non aux services externes.
+> La console définit 5 rôles génériques : Administrateur, DevOps, Développeur, Sécurité et lecture seule. Ces rôles
+> permettent d'attribuer des permissions par défaut dans la console et dans les services externes. La création de rôles
+> custom est par contre limitée uniquement à la console et non aux services externes.
 
-![repro](./img/roles-predefinis.png)
+![roles prédéfinis](./img/roles-predefinis.png)
 
-Vous pouvez retrouver dans la documentation CPiN le [détail des correspondances RBAC](https://cloud-pi-native.fr/guide/rbac/console-cpin) entre ces rôles et les services externes.
+Vous pouvez retrouver dans la documentation CPiN le [détail des correspondances RBAC](https://cloud-pi-native.fr/guide/rbac/console-cpin) entre ces rôles et les
+services externes.
 
 ▶️ Allez sur le menu `Rôles` du projet et retrouvez le rôle permettant d'attribuer les permissions suivantes :
 - *Voir les environnements*
@@ -100,15 +111,18 @@ Vous pouvez retrouver dans la documentation CPiN le [détail des correspondances
 
 ▶️ Cliquez sur le bouton `Reprovisionner le projet`
 
-▶️ Une fois que c'est fait par les 2 voisins, retournez dans la liste de vos projets et consultez le projet de votre voisin. Vérifiez que vous avez bien les droits correspondants.
+▶️ Une fois que c'est fait par les 2 voisins, retournez dans la liste de vos projets et consultez le projet de votre
+voisin. Vérifiez que vous avez bien les droits correspondants.
 
 ## Gestion des ressources
 
 L'onglet `Ressources` permet de gérer :
-- les `Environnements` : permet de créer un environnement applicatif, associé à un cluster et un quota d'utilisation de ressources.
+- les `Environnements` : permet de créer un environnement applicatif, associé à un cluster et un quota d'utilisation de
+ressources.
 - les `Dépôts` : les dépôts de code correspondent à des dépôts Git externe à CPiN et contenant :
   - Soit du code applicatif dont le but est de construire et déposer une image Docker sur le dépôt d'artefact *Harbor*
-  - Soit du code d'infrastructure contenant des manifest et des charts Helm ou Kustomize, permettant de déployer des applications.
+  - Soit du code d'infrastructure contenant des manifest et des charts Helm ou Kustomize, permettant de déployer des
+applications.
 - les `Déploiements` : Permet d'associer un environnement à un ou plusieurs dépôts.
 
 ![ressources](./img/ressources.png)
